@@ -98,9 +98,9 @@ module --quiet purge  # clear any inherited modules
 - We request resources from the scheduler (queuing system).
 - But the scheduler cannot tell how long the job will run and what resources it
   will really consume.
-- Just the fact that I am asking the scheduler for 40 cores does not mean that
-  the code will actually run in parallel and use all of them.
-- Number of cores and amount of memory are not independent. If you ask for more memory
+- Just the fact that I am asking the scheduler for 40 cores
+  .emph[does not mean that the code will actually run in parallel] and use all of them.
+- .emph[Number of cores and amount of memory are not independent]. If you ask for more memory
   than is available on the number of cores, you will reserve and block more cores.
 - Asking for a lot of memory "just to be on the safe side" can affect your queuing time
   and compute budget.
