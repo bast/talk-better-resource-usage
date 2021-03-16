@@ -126,7 +126,7 @@ class: center, middle, inverse
 
 ---
 
-# Demo
+# Demo (1/2)
 
 ### How much memory do I need?
 
@@ -134,15 +134,27 @@ class: center, middle, inverse
   [How to choose the right amount of memory](https://documentation.sigma2.no/jobs/choosing_memory_settings.html)
 - I will show some of this
 - If this is your own code and needs excessive memory perhaps contact us for advanced user support?
+- Also consider which queue/partition you submit to
 
+---
 
-### How many cores do I need?
+# Demo (2/2)
+
+### How many cores should we ask for?
 
 - Timing a series of runs
 - [Slurm browser](https://documentation.sigma2.no/jobs/monitoring.html)
 - [Arm perf-report](https://documentation.sigma2.no/jobs/performance.html)
 
 
+### Notes
+
+- [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
+
+---
+
+# Discussion
+
 ### What is MPI and OpenMP and how can I tell?
 
-- Discussion: Consult manual for the software or contact support (their or our)
+- Discussion: Consult manual for the software or contact support (theirs or ours)
