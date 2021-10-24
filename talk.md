@@ -8,15 +8,7 @@ class: center, middle
 
 ---
 
-# Motivation/ learning outcomes
-
-### Be able to tell what resources (.emph[memory, cores, time]) your job needs
-
-### Understand why knowing the resource needs can be .emph[good for you] and for all other users
-
-There will be few slides and a demo in the terminal where I will try some of this out.
-
----
+## Goal
 
 ```bash
 #!/bin/bash
@@ -42,7 +34,16 @@ module --quiet purge  # clear any inherited modules
 
 ---
 
-# How we imagine that job scripts are prepared
+## Motivation/ learning outcomes
+
+- Be able to tell what resources (.emph[memory, cores, time]) your job needs
+- Understand why knowing the resource needs can be .emph[good for you] and for all other users
+
+There will be few slides and a demo in the terminal where I will try some of this out.
+
+---
+
+## How we imagine that job scripts are prepared
 
 - Taking some training
 - Reading documentation
@@ -53,7 +54,7 @@ module --quiet purge  # clear any inherited modules
 
 ---
 
-# How job scripts are often prepared
+## How job scripts are often prepared
 
 - Job scripts are often passed from generation to generation
 - Tweaking until it does not crash
@@ -68,7 +69,7 @@ module --quiet purge  # clear any inherited modules
 
 ---
 
-# Why it matters
+## Why it matters
 
 ### Memory
 
@@ -91,7 +92,7 @@ module --quiet purge  # clear any inherited modules
 
 ---
 
-# Possible confusion
+## Few points which are often misunderstood
 
 ### None of this is expected to be obvious for a beginner
 
@@ -115,7 +116,7 @@ class: center, middle, inverse
 
 ---
 
-# How to grow your calculation
+## How to grow your calculation
 
 - Start with a short 5-minute run on 1 core
 - Then try more cores on the same node
@@ -126,21 +127,24 @@ class: center, middle, inverse
 
 ---
 
-# Demo (1/2)
+class: center, middle, inverse
 
-### How much memory do I need?
+# Demo time
+
+---
+
+## Demo (1/3): How much memory do I need?
 
 - Several strategies are outlined in
   [How to choose the right amount of memory](https://documentation.sigma2.no/jobs/choosing_memory_settings.html)
-- I will show some of this
-- If this is your own code and needs excessive memory perhaps contact us for advanced user support?
+- We will together try some of this
+- If this is your own code and needs excessive memory perhaps contact us for
+  [extended support](https://documentation.sigma2.no/getting_help/extended_support.html)?
 - Also consider which queue/partition you submit to
 
 ---
 
-# Demo (2/2)
-
-### How many cores should we ask for?
+## Demo (2/3): How many cores should we ask for?
 
 - Timing a series of runs
 - [Slurm browser](https://documentation.sigma2.no/jobs/monitoring.html)
@@ -153,8 +157,55 @@ class: center, middle, inverse
 
 ---
 
-# Discussion
+## Demo (3/3): Example for a memory-bound job
 
-### What is MPI and OpenMP and how can I tell?
+Write me ...
 
-- Discussion: Consult manual for the software or contact support (theirs or ours)
+---
+
+class: center, middle, inverse
+
+# Discussion time
+
+---
+
+## What is MPI and OpenMP and how can I tell? (1/2)
+
+### If you wrote the software
+
+- Then you probably know
+
+
+### If it is written by somebody else
+
+- It can be difficult to tell
+- Consult manual for the software or contact support (theirs or ours)
+- `grep -i mpi` and `grep -i omp` the source code
+
+
+### Examples
+
+- Write me ...
+
+---
+
+## What is MPI and OpenMP and how can I tell? (2/2)
+
+### Python/R/Matlab
+
+- Often not parallelized
+- But can use parallelization (e.g. `mpi4py` or `multiprocessing`)
+
+
+### Code may call a library which is shared-memory parallelized
+
+- Example: BLAS libraries
+
+---
+
+## How to run many sequential tasks in parallel
+
+- [ResearchSoftwareHour](https://researchsoftwarehour.github.io/)
+  - [Session noes](https://researchsoftwarehour.github.io/sessions/rsh-008/)
+  - [Examples](https://github.com/ResearchSoftwareHour/demo-parallel-tasks)
+- [Array jobs](https://documentation.sigma2.no/jobs/job_scripts/array_jobs.html)
