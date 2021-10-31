@@ -137,7 +137,7 @@ class: center, middle, inverse
 
 ---
 
-## Demo (1/3): How much memory do I need?
+## Demo (1/2): How much memory do I need?
 
 - Several strategies are outlined in
   [How to choose the right amount of memory](https://documentation.sigma2.no/jobs/choosing-memory-settings.html)
@@ -148,46 +148,11 @@ class: center, middle, inverse
 
 ---
 
-## Demo (2/3): How many cores should we ask for?
+## Demo (2/2): How many cores should we ask for?
 
 - Several strategies are outlined in
   [How to choose the numer of cores](https://documentation.sigma2.no/jobs/choosing-number-of-cores.html)
 - We will together try some of this
-- If this is your own code and needs excessive memory perhaps contact us for
-  [extended support](https://documentation.sigma2.no/getting_help/extended_support.html)?
-
-
-### Notes
-
-- [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
-
----
-
-## Demo (3/3): Example for a memory-bound job
-
-We will together run and discuss an example which produces the following performance
-report:
-
-```
-...
-
-Summary: mybinary is Compute-bound in this configuration
-Compute:                                    100.0% |=========|
-MPI:                                          0.0% |
-I/O:                                          0.0% |
-This application run was Compute-bound. A breakdown of this time and advice for
-investigating further is in the CPU section below.  As very little time is
-spent in MPI calls, this code may also benefit from running at larger scales.
-
-CPU:
-A breakdown of the 100.0% CPU time:
-Scalar numeric ops:                           4.6% ||
-Vector numeric ops:                           0.0% |
-Memory accesses:                             88.1% |========|
-The per-core performance is memory-bound. Use a profiler to identify
-time-consuming loops and check their cache performance.  No time is spent in
-vectorized instructions. Check the compiler's vectorization advice to see why
-key loops could not be vectorized.
-
-...
-```
+- Do not hesitate to contact
+- [support](https://documentation.sigma2.no/getting_help/support_line.html) if
+- you are unsure about how many cores/tasks/threads to ask for.
