@@ -140,7 +140,7 @@ class: center, middle, inverse
 ## Demo (1/3): How much memory do I need?
 
 - Several strategies are outlined in
-  [How to choose the right amount of memory](https://documentation.sigma2.no/jobs/choosing_memory_settings.html)
+  [How to choose the right amount of memory](https://documentation.sigma2.no/jobs/choosing-memory-settings.html)
 - We will together try some of this
 - If this is your own code and needs excessive memory perhaps contact us for
   [extended support](https://documentation.sigma2.no/getting_help/extended_support.html)?
@@ -150,9 +150,11 @@ class: center, middle, inverse
 
 ## Demo (2/3): How many cores should we ask for?
 
-- Timing a series of runs
-- [Slurm browser](https://documentation.sigma2.no/jobs/monitoring.html)
-- [Arm perf-report](https://documentation.sigma2.no/jobs/performance.html)
+- Several strategies are outlined in
+  [How to choose the numer of cores](https://documentation.sigma2.no/jobs/choosing-number-of-cores.html)
+- We will together try some of this
+- If this is your own code and needs excessive memory perhaps contact us for
+  [extended support](https://documentation.sigma2.no/getting_help/extended_support.html)?
 
 
 ### Notes
@@ -189,43 +191,3 @@ key loops could not be vectorized.
 
 ...
 ```
-
----
-
-class: center, middle, inverse
-
-# Discussion time
-
----
-
-## What is MPI and OpenMP and how can I tell? (1/2)
-
-### If you wrote the software
-
-- Then you probably know
-
-
-### If it is written by somebody else
-
-- It can be difficult to tell
-- Consult manual for the software or contact support (theirs or ours)
-- `grep -i mpi` and `grep -i omp` the source code
-
-
-### Examples
-
-- Write me ...
-
----
-
-## What is MPI and OpenMP and how can I tell? (2/2)
-
-### Python/R/Matlab
-
-- Often not parallelized
-- But can use parallelization (e.g. `mpi4py` or `multiprocessing`)
-
-
-### Code may call a library which is shared-memory parallelized
-
-- Examples: BLAS libraries, NumPy, SciPy
