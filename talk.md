@@ -29,7 +29,7 @@ module --quiet purge  # clear any inherited modules
 - This presentation is about the `--ntasks`, `--mem-per-cpu`, and `--time`.
 - We will not talk about Slurm partitions.
 - Many documentation pages (including [our documentation](https://documentation.sigma2.no))
-  shows how to specify these but falls a bit short in showing how to find out good values.
+  shows how to specify these .emph[how do we know what values to use?]
 - Documentation expects me to know whether my job uses MPI or OpenMP but how can I tell?
 
 ---
@@ -123,7 +123,11 @@ class: center, middle, inverse
 - Then try going beyond one node
 - Then increase the system size and make your calculation longer
 
-### Discuss the advantages of this approach
+
+### Discussion
+
+- What are the advantages of this approach?
+- What are possible challenges of this approach?
 
 ---
 
@@ -231,6 +235,6 @@ class: center, middle, inverse
 ## How to run many sequential tasks in parallel
 
 - [ResearchSoftwareHour](https://researchsoftwarehour.github.io/)
-  - [Session noes](https://researchsoftwarehour.github.io/sessions/rsh-008/)
+  - [Session notes](https://researchsoftwarehour.github.io/sessions/rsh-008/)
   - [Examples](https://github.com/ResearchSoftwareHour/demo-parallel-tasks)
 - [Array jobs](https://documentation.sigma2.no/jobs/job_scripts/array_jobs.html)
