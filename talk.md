@@ -229,12 +229,3 @@ class: center, middle, inverse
 ### Code may call a library which is shared-memory parallelized
 
 - Example: BLAS libraries
-
----
-
-## How to run many sequential tasks in parallel
-
-- [ResearchSoftwareHour](https://researchsoftwarehour.github.io/)
-  - [Session notes](https://researchsoftwarehour.github.io/sessions/rsh-008/)
-  - [Examples](https://github.com/ResearchSoftwareHour/demo-parallel-tasks)
-- [Array jobs](https://documentation.sigma2.no/jobs/job_scripts/array_jobs.html)
