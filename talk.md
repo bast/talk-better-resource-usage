@@ -228,4 +228,4 @@ class: center, middle, inverse
 
 ### Code may call a library which is shared-memory parallelized
 
-- Example: BLAS libraries
+- Examples: BLAS libraries, NumPy, SciPy
