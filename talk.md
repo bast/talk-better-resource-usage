@@ -145,6 +145,20 @@ class: center, middle, inverse
 
 ---
 
+## Create a small example for you
+
+- Something that runs in 5 minutes
+- Where you know the result and the timing
+
+
+### Next time you are unsure whether it's the machine or "you"?
+
+- Run the small example
+- If it suddenly stopped working or runs slower, you know it's probably the machine
+- Now you can send us the example so that we fix the machine
+
+---
+
 class: center, middle, inverse
 
 # Demo time
