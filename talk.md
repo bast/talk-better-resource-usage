@@ -131,6 +131,20 @@ class: center, middle, inverse
 
 ---
 
+## How to grow your calculation
+
+.quote["But my systems are big to start with!"]
+
+.quote["-- Try to make them artificially smaller."]
+
+.quote["But then it's scientifically not meaningful!"]
+
+- To calibrate the computation parameters the scientific results do not have to be meaningful
+- This can still be meaningful for the calibration
+- Don't be afraid to create fantasy datasets to test the scaling
+
+---
+
 class: center, middle, inverse
 
 # Demo time
