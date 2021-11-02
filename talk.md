@@ -182,5 +182,5 @@ class: center, middle, inverse
   [How to choose the numer of cores](https://documentation.sigma2.no/jobs/choosing-number-of-cores.html)
 - We will together try some of this
 - Do not hesitate to contact
-- [support](https://documentation.sigma2.no/getting_help/support_line.html) if
-- you are unsure about how many cores/tasks/threads to ask for.
+  [support](https://documentation.sigma2.no/getting_help/support_line.html) if
+  you are unsure about how many cores/tasks/threads to ask for.
